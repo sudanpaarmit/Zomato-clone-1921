@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }body {
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  background-color: #ff4d4d;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background: url('https://source.unsplash.com/1600x600/?food') no-repeat center center/cover;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 48px;
+}
+
+.header p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.filter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.filter-btn {
+  padding: 10px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+  </style>
+</head><body>
+  <div class="navbar">
+    Zomato Clone
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Restaurants</a>
+      <a href="#">Explore Options</a>
+      <a href="#">About</a>
+    </div>
+  </div>  <div class="header">
+    <h1>Zomato</h1>
+    <p>Discover the best food and drink in your city</p>
+    <div class="search-bar">
+      <input type="text" placeholder="Search here for your Dish">
+      <button>Login</button>
+      <button>Signup</button>
+    </div>
+    <h2 style="margin-top:20px; color: red;">MY LOCATION</h2>
+  </div>  <section class="section">
+    <h2>Popular Restaurants</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?pizza" alt="Pizza Palace">
+        <h3>Pizza Palace</h3>
+        <p>Delicious handmade pizzas with fresh toppings.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?sushi" alt="Sushi World">
+        <h3>Sushi World</h3>
+        <p>Authentic Japanese sushi and sashimi options.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?biryani" alt="Spicy Biryani">
+        <h3>Spicy Biryani</h3>
+        <p>Enjoy the best biryani in town with a variety of spices.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?burger" alt="Burger Hub">
+        <h3>Burger Hub</h3>
+        <p>Juicy burgers with crispy fries and cool drinks.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?vegetarian" alt="Green Delight">
+        <h3>Green Delight</h3>
+        <p>Fresh and healthy vegetarian and vegan options.</p>
+      </div>
+    </div>
+  </section>  <section class="section">
+    <h2>Popular Dishes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?margherita" alt="Margherita Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Classic pizza with fresh basil and mozzarella.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?butterchicken" alt="Butter Chicken">
+        <h3>Butter Chicken</h3>
+        <p>Creamy, rich and spiced Indian chicken curry.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?paneer" alt="Tandoori Paneer">
+        <h3>Tandoori Paneer</h3>
+        <p>Grilled cottage cheese with Indian spices.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?veggieburger" alt="Veggie Burger">
+        <h3>Veggie Burger</h3>
+        <p>Loaded with fresh vegetables and sauces.</p>
+      </div>
+    </div>
+  </section>  <section class="section">
+    <h2>Explore Options Near Me</h2>
+    <div class="filter-grid">
+      <button class="filter-btn">Fast Food</button>
+      <button class="filter-btn">Veg</button>
+      <button class="filter-btn">Non-Veg</button>
+      <button class="filter-btn">Desserts</button>
+      <button class="filter-btn">Chinese</button>
+      <button class="filter-btn">Healthy</button>
+    </div>
+  </section>  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <h4>About Zomato Clone</h4>
+        <p>Made for a college project showcasing restaurant listings and food options.</p>
+      </div>
+      <div>
+        <h4>For Restaurants</h4>
+        <ul>
+          <li>Partner With Us</li>
+          <li>Apps For You</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Learn More</h4>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social Links</h4>
+        <p>[LinkedIn] [GitHub] [Instagram]</p>
+      </div>
+    </div>
+  </footer>
+</body></html>
